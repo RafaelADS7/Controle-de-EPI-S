@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Submenu</title>
+    <link rel="stylesheet" href="paginatesteFlex.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="esquerda"> 
+            <button class="botao_superior" id="botao1"> Cadastro </button>
+            <button id="botao2"> Relatorio </button>
+            <button id="botao3"> Usuario </button>
+            <button id="botao4"> Atualizar </button>
+        </div>
+    
+
+
+        <div class="direita"> 
+            <div class="superior"> 
+    
+            </div>
+
+            <div id="conteudo-direita1" class="conteudo-direita">
+                <h2> Cadastro de EPI'S </h2> 
+                <form> 
+                    <label class="caixas_de_texto" for="nome">Nome:</label> 
+                    <input type="text" id="nome" name="nome" placeholder="Descrição do EPI'S"> 
+    
+                    <label class="caixas_de_texto" for="Fornecedor">Fornecedor:</label> 
+                    <input type="text" id="Fornecedor" name="Fornecedor" placeholder="Fornecedor"> 
+    
+                    <label class="caixas_de_texto" for="Preço">Preço:</label> 
+                    <input type="number" id="Preço" name="Preço" placeholder="Preço">
+    
+                    <br> <br>
+    
+                    <label class="caixas_de_texto" for="Especificações"> Especificações:</label>
+                    <textarea class="Especificações" placeholder="Especificações"></textarea>
+    
+                    <br> <br>
+    
+                    <label class="caixas_de_texto" for="Reposição">Reposição:</label>
+                     <select id="Reposição" name="Reposição"> 
+                        <option value="Em dias">Em dias</option>
+                        <option value="Em meses">Em meses</option> 
+                        <option value="Em ano">Em ano</option>
+                    </select>
+    
+                    <label class="caixas_de_texto" for="Data de validade">Data de validade:</label> 
+                    <input type="date" id="Data de validade" name="Data de validade" placeholder="Data de validade"> 
+    
+                    <label class="caixas_de_texto" for="Data Validade CA">Data Validade CA:</label> 
+                    <input type="date" id="Data Validade CA" name="Data Validade CA" placeholder="Data Validade CA"> 
+    
+                    <label class="caixas_de_texto" for="Atenuação">Atenuação:</label> 
+                    <input type="number" id="Atenuação" name="Atenuação" placeholder="Atenuação"> 
+    
+                    <label class="caixas_de_texto" for="Quantidade">Quantidade:</label> 
+                    <input type="number" id="Quantidade" name="Quantidade" placeholder="Quantidade">
+    
+                </form>
+    
+                <button class="salvar"> Salvar </button>
+
+            </div>
+
+
+            <div id="conteudo-direita2" class="conteudo-direita">Conteúdo para o Botão 2</div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

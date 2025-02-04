@@ -1,0 +1,89 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda {
+    display: flex;
+    border: 1px solid #000;
+    width: 15%;
+    background-color: #569ede;
+    border: 2px solid #ffffff;
+    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+}
+
+.direita {
+    width: 85%;
+    background-color: #569ede;
+    border: 2px solid #ffffff;
+}
+
+.superior {
+    height: 20%; /* Ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+}
+
+button {
+    margin: 5%;
+    width: 80%;
+    cursor: pointer;
+}
+
+.botao_superior {
+    margin-top: 20%;
+}
+
+
+
+
+.conteudo-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    display: none; /* Inicialmente escondido */
+    height: calc(100vh - 30%); /* Garante que o contêiner ocupe o restante da altura */
+    overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    padding: 20px;
+    background-color: #569ede
+}    
+
+.caixas_de_texto {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 500px; /* Limita a largura máxima dos campos */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+label, input, select, textarea {
+    width: 100%; /* Ocupa toda a largura do form-group */
+    padding: 4px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura e altura */
+}
+
+button.salvar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 1px;
+}
